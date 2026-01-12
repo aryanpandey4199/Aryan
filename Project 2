@@ -1,0 +1,26 @@
+class Book:
+
+    def __init__(self):
+        self.book_name = str(input("Enter a book's name: "))
+        self.author_name = str(input("Enter author name: "))
+        self.book_price = int(input("Enter price of book: "))
+        self.total_copies = int(input("Enter total number of copies to be purchased: "))
+
+    def generate_bill(self):
+        print("Purchase Details".center(45, "-"))
+        self.book_price = self.book_price * self.total_copies
+        print("Book Name:", self.book_name)
+        print("Author Name:", self.author_name)
+        print("Total Price of Books:", self.book_price)
+
+    def __del__(self):
+        print("Destructor called and object deleted")
+
+    def check(self):
+        print("I am present")
+
+
+c = Book()
+c.generate_bill()
+c.check()
+del c
