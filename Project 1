@@ -4,7 +4,7 @@ class grand_parent:
 class parent1(grand_parent):
      def func2(self):
           print("this is function two")
-
+//comment
 class parent2(grand_parent):
      def func3(self):
           print("this is function three")
