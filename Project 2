@@ -1,9 +1,9 @@
 class Book:
 
     def __init__(self):
-        self.book_name = str(input("Enter a book's name: "))
+        self.book_name = str(input("Enter a book's no: "))
         self.author_name = str(input("Enter author name: "))
-        self.book_price = int(input("Enter price of book: "))
+        self.book_price = int(input(Enter price of book: "))
         self.total_copies = int(input("Enter total number of copies to be purchased: "))
 
     def generate_bill(self):
